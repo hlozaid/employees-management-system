@@ -5,16 +5,19 @@
 <html>
 <head>
     <title>Search Employee</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 min-vh-100 d-flex align-items-center justify-content-center ">
+<div class="bg-white p-4 rounded-lg shadow-md-v-50">
+
     <h2>Search Employee</h2>
     <form action="SearchEmployeeServlet" method="post">
-        Keyword: <input type="text" name="keyword" required><br>
-        <input type="submit" value="Search"> 
+       <label for="keyword" class="form-label"> Name:</label> <input type="text" id="keyword" name="keyword" required  class="form-control mb-3"><br>
+        <input type="submit" value="Search" class="btn btn-primary" > 
        
-        <button onclick="location.href='adminHome.jsp';">Home</button>
+        <button onclick="location.href='adminHome.jsp';" class="btn btn-primary">Home</button>
     </form>
+    </div>
 
     <% if (request.getAttribute("employeeList") != null && !((List<?>)request.getAttribute("employeeList")).isEmpty()) { %>
         <h2>Search Results</h2>
@@ -38,5 +41,6 @@
             <% } %>
         </table>
     <% } %>
-</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+ </body>
 </html>

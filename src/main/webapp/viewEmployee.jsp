@@ -37,7 +37,7 @@
                 }
             } 
         %>
-        <button onclick="location.href='adminHome.jsp';">Home</button>
+        <button onclick="location.href='adminHome.jsp';" class="btn btn-primary">Home</button>
     </table>
 </body>
 </html>

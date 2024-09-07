@@ -24,6 +24,6 @@ public class UpdateEmployeeServlet extends HttpServlet {
         employee.setSalary(salary);
 
         employeeDAO.updateEmployee(employee);
-        response.sendRedirect("viewEmployee.jsp");
+        response.sendRedirect("ViewEmployeeServlet");
     }
 }
