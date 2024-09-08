@@ -11,6 +11,7 @@
         <li><a href="addEmployee.jsp">Add Employee</a></li>
         <li><a href="ViewEmployeeServlet">View All Employees</a></li>
         <li><a href="searchEmployee.jsp">Search Employee</a></li>
+        <li><a href="LogoutServlet">Logout</a></li>
     </ul>
 </body>
 </html>
